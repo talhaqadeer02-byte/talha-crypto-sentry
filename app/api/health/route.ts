@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const res = await fetch("http://localhost:4000/health", {
+    const res = await fetch("https://talha-crypto-sentryy.up.railway.app/api/health", {
       cache: "no-store",
     });
 
