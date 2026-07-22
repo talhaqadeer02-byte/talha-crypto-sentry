@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "server": "node server.js",
-    "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+  "dev": "next dev",
+  "server": "node server.js",
+  "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint",
+  "postinstall": "prisma generate"
+},
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.0",
     "@prisma/client": "^6.19.3",
